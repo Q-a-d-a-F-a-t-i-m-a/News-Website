@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen News - Latest News & Updates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><i class="fas fa-newspaper"></i> NextGen News</h1>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="#" class="nav-link active" data-category="all">Home</a></li>
+                        <li><a href="#" class="nav-link" data-category="politics">Politics</a></li>
+                        <li><a href="#" class="nav-link" data-category="sports">Sports</a></li>
+                        <li><a href="#" class="nav-link" data-category="entertainment">Entertainment</a></li>
+                        <li><a href="#" class="nav-link" data-category="technology">Technology</a></li>
+                        <li><a href="#" class="nav-link" data-category="business">Business</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-search">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Search news...">
+                        <button id="search-btn"> <i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                
+                <div class="nav-toggle" id ="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news">
+        <div class="breaking-label">
+            <i class="fas fa-bolt"></i> BREAKING
+        </div>
+        <div class="breaking-content">
+            <div class="breaking-text" id="breaking-text">
+                Latest updates from around the world • Technology sector shows remarkable growth • Sports championship finals this weekend
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-main">
+                        <article class="hero-article" id="hero-article">
+                            <div class="hero-image">
+                                <img src="pic1.png" alt="Hero News">
+                                <div class="hero-overlay">
+                                    <span class="hero-category">Breaking News</span>
+                                    <h2 class="hero-title">Major Technology Breakthrough Announced</h2>
+                                    <p class="hero-excerpt">Scientists have made a groundbreaking discovery that could revolutionize the way we approach renewable energy...</p>
+                                    <div class="hero-meta">
+                                        <span class="hero-date">2 hours ago</span>
+                                        <span class="hero-author">By Tech Reporter</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <div class="hero-sidebar">
+                        <h3>Trending Now</h3>
+                        <div class="trending-articles" id="trending-articles">
+                            <!-- Trending articles will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Categories -->
+        <section class="news-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="section-title">Latest News</h2>
+                    <div class="category-filters">
+                        <button class="filter-btn active" data-category="all">All</button>
+                        <button class="filter-btn" data-category="politics">Politics</button>
+                        <button class="filter-btn" data-category="sports">Sports</button>
+                        <button class="filter-btn" data-category="entertainment">Entertainment</button>
+                        <button class="filter-btn" data-category="technology">Technology</button>
+                        <button class="filter-btn" data-category="business">Business</button>
+                    </div>
+                </div>
+                
+                <div class="news-grid" id="news-grid">
+                    <!-- News articles will be populated by JavaScript -->
+                </div>
+                
+                <div class="load-more">
+                    <button id="load-more-btn" class="btn-primary">Load More Articles</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-newspaper"></i> NextGen News</h3>
+                    <p>Your trusted source for latest news and updates from around the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Politics</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get latest news updates</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Enter your email">
+                        <button class="btn-primary">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 NextGen News. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Article Modal -->
+    <div class="modal" id="article-modal">
+        <div class="modal-content">
+            <span class="modal-close" id="modal-close">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Article content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
